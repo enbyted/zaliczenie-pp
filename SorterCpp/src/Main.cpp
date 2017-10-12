@@ -17,10 +17,23 @@
  */
 
 typedef unsigned int number_t;
-constexpr number_t maxNumber = RAND_MAX;
 typedef StaticArray<number_t> array_t;
 typedef Bucket<number_t> bucket_t;
 typedef StaticArray<bucket_t> bucket_array_t;
+
+number_t my_rand(number_t range)
+{
+	number_t value = 0;
+	number_t accumulator = 0;
+
+	while (accumulator < range)
+	{
+		value += rand();
+		accumulator += RAND_MAX;
+	}
+
+	return value % range;
+}
 
 void populate_array(array_t& array, number_t start, number_t end)
 {
@@ -29,7 +42,7 @@ void populate_array(array_t& array, number_t start, number_t end)
 
 	for (size_t i = array.Size(); i < array.Capacity(); i++)
 	{
-		array.PushBack(start + (rand() % range));
+		array.PushBack(start + my_rand(range));
 	}
 }
 
@@ -102,12 +115,8 @@ int main(int argc, char *argv[])
 	cin >> count;
 	cout << "What should be the lowest possible number? ";
 	cin >> start;
-	do {
-		if (end >= maxNumber)
-			cout << "This number is too big for me (max is " << maxNumber << ")" << endl;
-		cout << "What should be the highest possible number? ";
-		cin >> end;
-	} while (end >= maxNumber);
+	cout << "What should be the highest possible number? ";
+	cin >> end;
 
 	if (end < start)
 	{
