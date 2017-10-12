@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SorterCpp", "SorterCpp\Sort
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SorterCS", "SorterCS\SorterCS.csproj", "{F815F418-C171-4DF7-BE21-BC07D3E4E8E2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleSorterCpp", "SimpleSorterCpp\SimpleSorterCpp.vcxproj", "{00851527-AE82-4931-9A4B-C33D54140A2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,16 @@ Global
 		{F815F418-C171-4DF7-BE21-BC07D3E4E8E2}.Release|x64.Build.0 = Release|Any CPU
 		{F815F418-C171-4DF7-BE21-BC07D3E4E8E2}.Release|x86.ActiveCfg = Release|Any CPU
 		{F815F418-C171-4DF7-BE21-BC07D3E4E8E2}.Release|x86.Build.0 = Release|Any CPU
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Debug|x64.ActiveCfg = Debug|x64
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Debug|x64.Build.0 = Debug|x64
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Debug|x86.ActiveCfg = Debug|Win32
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Debug|x86.Build.0 = Debug|Win32
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Release|x64.ActiveCfg = Release|x64
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Release|x64.Build.0 = Release|x64
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Release|x86.ActiveCfg = Release|Win32
+		{00851527-AE82-4931-9A4B-C33D54140A2B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
