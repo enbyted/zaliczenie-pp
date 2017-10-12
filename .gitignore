@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# VS files
+Debug/
+*/Debug/
+Release/
+*/Release/
+*.opendb
+*.db
+*.suo
